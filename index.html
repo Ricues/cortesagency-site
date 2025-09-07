@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cortés Agency — Twoja płynna podróż przez świat reklamy</title>
+  <meta name="description" content="Agencja marketingowa: oprawa fotograficzna, social media, odzież reklamowa i sportowa. Jakość, terminowość, partnerstwo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta property="og:title" content="Cortés Agency" />
+  <meta property="og:description" content="Twoja płynna podróż przez świat reklamy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-image.jpg" />
+  <meta name="theme-color" content="#0F2A2E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Cortés Agency",
+    "url": "https://example.com/",
+    "logo": "https://example.com/assets/img/logo.svg",
+    "sameAs": ["https://facebook.com/", "https://instagram.com/"],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+48 607 301 703",
+      "contactType": "customer service",
+      "areaServed": "PL"
+    }]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header" id="top" role="banner">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="Cortés Agency – strona główna">
+        <!-- TODO: podmień logo na własny SVG pod tą ścieżką -->
+        <img src="assets/img/logo.svg" alt="cortés" height="28" />
+      </a>
+      <nav class="nav" aria-label="Główna nawigacja">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Otwórz menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="#onas">O nas</a></li>
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#produkty">Nasze produkty</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="#kontakt">Skontaktuj się</a></li>
+          <li><button class="theme-toggle" aria-label="Przełącz motyw">🌓</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" data-parallax>
+      <!-- TODO: podmień tło w CSS: .hero::before -> background-image -->
+      <div class="container hero__inner">
+        <h1>Twoja płynna podróż przez świat reklamy.</h1>
+        <p class="eyebrow">CORTÉS AGENCY</p>
+        <div class="hero__cta">
+          <a href="#kontakt" class="btn btn--primary">Porozmawiajmy</a>
+          <a href="#oferta" class="btn btn--ghost">Nasza oferta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- O NAS -->
+    <section id="onas" class="section section--alt">
+      <div class="container grid grid--2">
+        <figure class="media">
+          <!-- TODO: podmień obraz -->
+          <img src="assets/img/team.jpg" alt="Zespół Cortés Agency przy pracy" loading="lazy" decoding="async">
+        </figure>
+        <div>
+          <h2>O nas</h2>
+          <p>Nasz zespół to specjaliści z wieloletnim doświadczeniem w marketingu, którzy wiedzą, jak ważna jest jakość i detale. Jako godny zaufania partner biznesowy zapewniamy terminowe realizacje i stały kontakt na każdym etapie współpracy.</p>
+          <ul class="checks">
+            <li>Terminowość i transparentność</li>
+            <li>Wysoka jakość kreacji i materiałów</li>
+            <li>Partnerska współpraca i doradztwo</li>
+            <li>Stała komunikacja i raportowanie</li>
+          </ul>
+          <div class="stats">
+            <div class="stat"><strong data-count="120">0</strong><span>zrealizowanych projektów</span></div>
+            <div class="stat"><strong data-count="98">0</strong><span>% poleceń</span></div>
+            <div class="stat"><strong data-count="7">0</strong><span>lat doświadczenia</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFERTA -->
+    <section id="oferta" class="section">
+      <div class="container">
+        <h2>Oferta</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="assets/img/service-photo.jpg" alt="" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h3>Oprawa fotograficzna</h3>
+              <p>Profesjonalne sesje zdjęciowe produktów, eventów i zespołu — spójne z identyfikacją marki.</p>
+              <button class="btn btn--secondary" data-modal="#m1">Dowiedz się więcej</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/img/service-brand.jpg" alt="" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h3>Twoja marka odzieżowa</h3>
+              <p>Projekt i produkcja odzieży – od koncepcji po gotowy produkt z metkami i etykietami.</p>
+              <button class="btn btn--secondary" data-modal="#m2">Dowiedz się więcej</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/img/service-social.jpg" alt="" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h3>Social media</h3>
+              <p>Strategia, content, sesje i reklamy – stały wzrost zasięgów i sprzedaży.</p>
+              <button class="btn btn--secondary" data-modal="#m3">Dowiedz się więcej</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/img/service-merch.jpg" alt="" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h3>Odzież reklamowa</h3>
+              <p>Jakościowe materiały i nadruki – dla firm, klubów i wydarzeń.</p>
+              <button class="btn btn--secondary" data-modal="#m4">Dowiedz się więcej</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/img/service-sport.jpg" alt="" loading="lazy" decoding="async">
+            <div class="card__body">
+              <h3>Odzież sportowa</h3>
+              <p>Komplety meczowe, treningowe i akcesoria – personalizacja pełna.</p>
+              <button class="btn btn--secondary" data-modal="#m5">Dowiedz się więcej</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODALS (treści demo) -->
+    <div class="modal" id="m1" role="dialog" aria-modal="true" aria-labelledby="m1t" hidden>
+      <div class="modal__dialog">
+        <button class="modal__close" data-close aria-label="Zamknij">×</button>
+        <h3 id="m1t">Oprawa fotograficzna</h3>
+        <p>Planujemy moodboard, dobieramy lokację i światło, dostarczamy zdjęcia w formatach do web/druk.</p>
+      </div>
+    </div>
+    <div class="modal" id="m2" role="dialog" aria-modal="true" aria-labelledby="m2t" hidden>
+      <div class="modal__dialog">
+        <button class="modal__close" data-close aria-label="Zamknij">×</button>
+        <h3 id="m2t">Twoja marka odzieżowa</h3>
+        <p>Od prototypu do produkcji seryjnej: kroje, materiały, etykiety, logistyka.</p>
+      </div>
+    </div>
+    <div class="modal" id="m3" role="dialog" aria-modal="true" aria-labelledby="m3t" hidden>
+      <div class="modal__dialog">
+        <button class="modal__close" data-close aria-label="Zamknij">×</button>
+        <h3 id="m3t">Social media</h3>
+        <p>Strategia, harmonogram, kreacje wideo/foto, raporty KPI. Zasięg i konwersje.</p>
+      </div>
+    </div>
+    <div class="modal" id="m4" role="dialog" aria-modal="true" aria-labelledby="m4t" hidden>
+      <div class="modal__dialog">
+        <button class="modal__close" data-close aria-label="Zamknij">×</button>
+        <h3 id="m4t">Odzież reklamowa</h3>
+        <p>Koszulki, bluzy, czapki, torby – sitodruk, DTF, haft. Krótkie i duże nakłady.</p>
+      </div>
+    </div>
+    <div class="modal" id="m5" role="dialog" aria-modal="true" aria-labelledby="m5t" hidden>
+      <div class="modal__dialog">
+        <button class="modal__close" data-close aria-label="Zamknij">×</button>
+        <h3 id="m5t">Odzież sportowa</h3>
+        <p>Personalizacja numerów/nazwisk, przewiewne materiały, szybkie terminy.</p>
+      </div>
+    </div>
+
+    <!-- PRODUKTY -->
+    <section id="produkty" class="section section--alt">
+      <div class="container">
+        <h2>Nasze produkty</h2>
+        <div class="filters" role="tablist" aria-label="Filtry produktów">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Wszystkie</button>
+          <button class="filter" data-filter="eco" role="tab">Eco</button>
+          <button class="filter" data-filter="premium" role="tab">Premium</button>
+        </div>
+        <div class="gallery" id="gallery">
+          <!-- TODO: podmień obrazki i tagi data-tags -->
+          <figure class="item" data-tags="eco premium">
+            <img src="assets/img/prod-1.jpg" alt="Produkt 1" loading="lazy" decoding="async">
+            <figcaption>Koszulka „Basic” <span class="tag">eco</span> <span class="tag">premium</span></figcaption>
+          </figure>
+          <figure class="item" data-tags="premium">
+            <img src="assets/img/prod-2.jpg" alt="Produkt 2" loading="lazy" decoding="async">
+            <figcaption>Bluza „Classic” <span class="tag">premium</span></figcaption>
+          </figure>
+          <figure class="item" data-tags="eco">
+            <img src="assets/img/prod-3.jpg" alt="Produkt 3" loading="lazy" decoding="async">
+            <figcaption>Torba „Eco” <span class="tag">eco</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERENCJE -->
+    <section class="section testimonials">
+      <div class="container">
+        <h2>Referencje</h2>
+        <div class="slider" data-slider>
+          <article class="slide is-active">
+            <p>„Wspólna praca przebiegła wzorowo – świetna komunikacja i terminowość.”</p>
+            <span>Anna K., e‑commerce lead</span>
+          </article>
+          <article class="slide">
+            <p>„Materiały zgodne z brandbookiem, efekty kampanii przeszły oczekiwania.”</p>
+            <span>Michał S., brand manager</span>
+          </article>
+          <article class="slide">
+            <p>„Pełen profesjonalizm – od strategii, przez content, po raporty.”</p>
+            <span>Laura P., marketing director</span>
+          </article>
+          <div class="slider__dots" aria-label="Nawigacja slidera"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section section--alt">
+      <div class="container grid grid--2">
+        <div>
+          <h2>Kontakt</h2>
+          <p>Nie od dziś wiadomo, że jakość jest dźwignią handlu, a dobry produkt przyciąga potencjalnych klientów dla Twojej firmy. Zainwestuj w reklamę, która działa. Razem skonstruujemy ofertę zgodnie z oczekiwaniami.</p>
+          <div class="contact-cards">
+            <a class="contact-card" href="tel:+48607301703">
+              <div class="icon">📞</div>
+              <div><strong>+48 607 301 703</strong><br><span>Dzwoń w dni robocze 9:00–17:00</span></div>
+            </a>
+            <a class="contact-card" href="mailto:kontakt@cortesagency.pl">
+              <div class="icon">✉️</div>
+              <div><strong>kontakt@cortesagency.pl</strong><br><span>Odpowiadamy tego samego dnia</span></div>
+            </a>
+            <div class="socials">
+              <a href="#" aria-label="Facebook">Facebook</a> ·
+              <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <form class="form" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="sr-only" aria-hidden="true">
+            <label>Nie wypełniaj: <input name="bot-field"></label>
+          </p>
+          <label for="name">Imię i nazwisko</label>
+          <input id="name" name="name" required placeholder="Jan Kowalski" />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="jan@firma.pl" />
+          <label for="msg">Wiadomość</label>
+          <textarea id="msg" name="message" rows="5" required placeholder="Napisz, w czym możemy pomóc"></textarea>
+          <button class="btn btn--primary" type="submit">Wyślij</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <img src="assets/img/logo.svg" alt="cortés" height="26" />
+        <p>Agencja marketingowa. Jakość, terminowość, partnerstwo.</p>
+      </div>
+      <nav aria-label="Stopka">
+        <ul class="footer__nav">
+          <li><a href="#onas">O nas</a></li>
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#produkty">Produkty</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="footer__meta">
+        <a href="privacy.html">Polityka prywatności</a>
+        <p>© 2025 Cortés Agency. Wszelkie prawa zastrzeżone.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
